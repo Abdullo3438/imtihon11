@@ -1,0 +1,910 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero': "url('/img/Sales - Light.png')",
+                        'com': "url('/img2/Rectangle 52.svg')",
+                        'f1': "url('/img/112.jpg')",
+                        'f2': "url('/icons/Rectangle 47.svg')",
+                        'f3': "url('/icons/f3.svg')",
+                        'f4': "url('/icons/f4.svg')",
+                        'comp1': "url('/icons/Rating.svg')",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="w-full">
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4">
+                <a href="#" class="flex items-center">
+                    <img src="./img/Group 33107.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">COCO</span>
+                </a>
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                aria-current="page">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="w-[90%]   m-auto  xl:flex xl:justify-between  xl:h-[700px] xl:w-[87%] ">
+
+            <div
+                class="w-full mt-[30px]  xl:w-[48%] xl:h-[550px]    xl:flex  xl:flex-col xl:justify-between  ">
+                <div>
+                    <h1 class="text-4xl font-bold font-['Inter']  xl:text-7xl  ">
+                        Digitally forward creative
+                    </h1>
+
+
+
+                </div>
+
+                <div>
+                    <div class="w-full h-[170px]  flex flex-col justify-end  xl:justify-center xl:mb-[30px]">
+                        <div class="relative  xl:translate-x-[50px]  xl:w-[80%]">
+                            <p class="absolute top-[-5px]  left-[-7px]">
+                                <span class="xl:hidden">____</span>
+                                <span class=" hidden  xl:flex  2xl:flex  xl:mr-[30px]">_______</span>
+                            </p>
+                            <p class="ml-[30px] text-sm  xl:text-2xl xl:font-bold ">
+                                <span class="xl:hidden"> Our biggest challenge is making sure we're always designing and
+                                    building products that will
+                                    help
+                                    you run your business better.</span>
+                                <span class="hidden xl:flex xl:pl-[20px]">
+                                    When it comes to interactive marketing, we've got you covered.
+                                    Be where the world is going
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="w-full flex  justify-between  mt-[30px] xl:w-[75%] ">
+                        <input class=" border-2 border-b-[#CED1D8] border-white pl-[15px] pb-[15px] xl:w-[300px] "
+                            type="email" placeholder="enter your email">
+
+                        <button class="bg-black text-white w-[120px] rounded-[30px] xl:w-[140px] ">
+                            Try for free
+                        </button>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="w-full xl:w-[48%] xl:h-[550px]">
+
+                <div
+                    class="w-full h-[370px]  bg-hero bg-center      bg-cover  mt-[30px]  xl:bg-none xl:relative    ">
+                    <img class=" hidden xl:block xl:w-[800px]  xl:absolute xl:translate-y-[-10px] " src="./Sales - Light.svg" alt="">
+                    <!-- <img  class="w-full   h-[300px]" src="./img/Sales - Light.png" alt=""> -->
+                    <img class="w-[100px] h-[150px] translate-x-[270px] translate-y-[10px] xl:w-[200px] xl:h-[200px] xl:w-[150px] xl:h-[250px]  xl:absulute  xl:translate-x-[350px]  top-[0px] "
+                        src="./img/Customer Growth - Light.png" alt="">
+
+                </div>
+
+
+
+
+
+
+                <div
+                    class="w-full h-[150px] flex   justify-evenly items-center     mt-[30px] bg-black rounded-xl">
+
+                    <div class="w-[47%] h-[80px] flex  flex-col  justify-between    pl-[10px] ">
+                        <p class="text-[#5C616E] text-[13px]">Sales</p>
+
+                        <h1 class="text-white text-md">$31,092</h1>
+
+
+                        <div class="flex  items-center">
+                            <img class="inline w-[13px] h-[13px]" src="./img/Frame 87.svg" alt="">
+                            <span class="ml-[10px] text-[13px]  font-medium text-[#60D39C]">4.2%</span>
+
+                            <span class="ml-[10px] text-[13px] text-[#5C616E]">form last year</span>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="w-[47%] h-[80px] flex  flex-col  justify-between   pl-[10px] ">
+                        <p class="text-[#5C616E] text-[13px]">Marketing</p>
+
+                        <h1 class="text-white text-md">$29,128 </h1>
+
+
+
+                        <div class="flex  items-center">
+                            <img class="inline w-[13px] h-[13px]" src="./img/2.svg" alt="">
+                            <span class="ml-[10px] text-[13px]  font-medium text-[#60D39C]">1.2%</span>
+
+                            <span class="ml-[10px] text-[13px] text-[#5C616E]">form last year</span>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--  bu div inromation    -->
+    <div class="w-full bg-[#1D1E25] py-[30px] mt-[30px]">
+        <div class="w-[90%]  m-auto  mt-8">
+
+            <div class="w-full  xl:w-[50%]  ">
+                <h1 class="text-[30px] font-bold leading-[40px] font-['Inter'] text-white xl:text-5xl">
+                    Sans help our client solve complex customer problems with date that does more.
+                </h1>
+
+
+                <p class="mt-[20px] text-[#7E8492] xl:w-[92%]">
+                    Our platform offers the modern enterprise full control of how date can be access and used with
+                    industry leading software solutions for identity, activation, and date collaboration
+                </p>
+
+            </div>
+
+            <div class="w-full mt-[30px] xl:flex  xl:flex-wrap  xl:justify-between ">
+
+
+                <div
+                    class="w-full h-[180px] border border-white flex flex-col justify-between   mt-[30px] xl:w-[44%] xl:h-[240px] ">
+                    <img class="w-[30px] h-[30px]" src="./img/Icon.svg" alt="">
+
+
+                    <h1 class="text-white text-[25px]  font-['Inter] xl:w-[50%]">
+                        Build your date fundamental
+                    </h1>
+
+
+                    <p class="text-[#7E8492] xl:w-[75%]">Build access to date, develop valuable business insights and
+                        drive revenue
+                        while maintaining full control over access and use of date at all times.</p>
+
+                </div>
+
+
+                <div
+                    class="w-full h-[180px] border border-white flex flex-col justify-between   mt-[30px]  xl:w-[44%]   xl:h-[240px] ">
+                    <img class="w-[30px] h-[30px]" src="./img/111.svg" alt="">
+
+
+                    <h1 class="text-white text-[25px]  font-['Inter] xl:w-[40%] ">
+                        Measure more effective
+                    </h1>
+
+
+                    <p class="text-[#7E8492] xl:w-[75%]">
+                        Effectively measure people-based campaigns with the freedom to choose from best-of breed
+                        partners to optimize and drive media innovation.
+                    </p>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div
+                    class="w-full h-[200px] border border-white flex flex-col justify-between   mt-[30px]  xl:w-[44%] xl:h-[240px] ">
+                    <img class="w-[30px] h-[30px]" src="./img/Icon (1).svg" alt="">
+
+
+                    <h1 class="text-white text-[25px]  font-['Inter] xl:w-[30%]">
+                        Activate your date
+                    </h1>
+
+
+                    <p class="text-[#7E8492]  xl:w-[80%]">
+                        Accurately address your specific audiences at scale across any channel, platform, publisher or
+                        network and safely translate date between identity space to improve results.
+                    </p>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div
+                    class="w-full h-[180px] border border-white flex flex-col justify-between   mt-[30px]  xl:w-[44%]   xl:h-[240px]">
+                    <img class="w-[30px] h-[30px]" src="./img/322.svg" alt="">
+
+
+                    <h1 class="text-white text-[25px]  font-['Inter] xl:w-[40%]">
+                        Strengthen consumer privacy
+                    </h1>
+
+
+                    <p class="text-[#7E8492]  xl:w-[80%]">
+                        Protect your customer date with leading privacy-preserving technologies and advanced techniques
+                        to minimize date movement while still enabling insight generation.
+
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- bu div 3 container -->
+    <div class="w-full mt-[30px] ">
+        <div class="w-[88%] m-auto xl:flex  xl:justify-between ">
+            <div class=" w-full bg-com h-[400px] bg-cover  bg-center xl:w-[46%] xl:h-[550px] ">
+                <img class="translate-x-[160px]  translate-y-[200px] xl:translate-x-[340px] xl:translate-y-[350px]" src="./img2/Bar Chart.svg"
+                    alt="">
+            </div>
+
+
+
+
+            <div class="w-full  xl:w-[48%]  xl:h-[550px]  ">
+
+                <div>
+
+                    <div>
+                        <h1 class="text-[29px]  font-['inter'] font-bold  xl:text-6xl">Passion to increase </h1>
+                        <h1 class="text-[29px]  font-['inter'] font-bold  xl:text-6xl">company revenue up to 85%</h1>
+                    </div>
+
+                    <p class="mt-[20px] text-[#7E8492] xl:w-[65%]">Automate your sales, marketing and service in one
+                        platform. Avoid date leaks
+                        and enable consistent messaging</p>
+                </div>
+
+                <div class="mt-[30px] h-[150px] flex flex-col  justify-between xl:w-[55%] xl:h-[200px]">
+                    <div class="w-full   flex justify-between">
+                        <img src="./img2/Icon.svg" alt="">
+                        <p class="text-sm ml-[14px] xl:w-[80%]  ">Close more deals with single - page contact managment
+                        </p>
+                    </div>
+                    <div class="w-full   flex justify-between">
+                        <img src="./img2/Icon.svg" alt="">
+                        <p class="text-sm ml-[14px] xl:w-[80%]">Enjoy one-click calling, call scripts and voicemail
+                            automation</p>
+                    </div>
+                    <div class="w-full   flex justify-between">
+                        <img src="./img2/Icon.svg" alt="">
+                        <p class="text-sm ml-[14px]   xl:w-[80%] ">Take stages and milestones of your deals to keep the
+                            sales process
+                            an track</p>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div
+            class="w-[90%] m-auto h-[200px]   flex flex-wrap mt-[30px] justify-between xl:w-[88%]  xl:items-center ">
+
+
+
+            <div class="w-[170px] h-[90px] xl:mb-[26px]">
+                <div>
+                    <h1 class="text-3xl font-bold  font-['Inter'] xl:text-5xl">17k</h1>
+                    <p class="text-[#7E8492] xl:py-[14px]  ">happy customers on worldwide</p>
+                </div>
+
+            </div>
+            <div class="w-[170px] h-[90px] flex justify-between  items-center">
+                <div class="w-[2px] bg-[#ccc] h-[55px] xl:h-[70px]"></div>
+                <div class="ml-[15px]">
+                    <h1 class="text-3xl font-bold  font-['Inter'] xl:text-5xl ">15+</h1>
+                    <p class="text-[#7E8492]  xl:py-[14px] ">Hours of work experience</p>
+                </div>
+
+            </div>
+            <div class="w-[170px] h-[90px]  xl:flex  xl:justify-between  xl:items-center">
+                <div class="w-[3px] bg-[#ccc] h-[55px]  hidden xl:flex xl:h-[70px]"></div>
+
+                <div class=" xl:ml-[10px] ">
+                    <h1 class="text-3xl font-bold  font-['Inter'] xl:text-5xl">50+</h1>
+                    <p class="text-[#7E8492]  xl:py-[14px]">Creativity & passionate members</p>
+                </div>
+
+            </div>
+            <div class="w-[160px] h-[90px]  flex justify-between  items-center">
+                <div class="w-[4px] bg-[#ccc] h-[55px] xl:h-[70px]"></div>
+                <div class="ml-[15px]">
+                    <h1 class="text-3xl font-bold  font-['Inter'] xl:text-5xl">100+</h1>
+                    <p class="text-[#7E8492] xl:py-[14px]">Integrations lorem ipsum integrations</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- bu div 4 container -->
+    <div class="w-full mt-[30px]">
+        <div class="w-[90%] m-auto xl:w-[88%]">
+
+
+            <div class="w-full h-[180px] xl:h-[400px]">
+                <img class="w-full    h-full xl:hidden" src="./img2/Image.png" alt="">
+                <img class="hidden xl:flex xl:w-full  xl:h-full " src="./Image.png" alt="">
+            </div>
+
+
+            <div class="xl:flex  xl:justify-between ">
+                <div class="w-full text-3xl font-['inter'] font-bold py-[25px] xl:w-[48%] xl:text-5xl">
+                    <span class="xl:hidden">
+                        Drive sustainable growth with personal and engaging experiences
+
+                    </span>
+                    <span class="hidden xl:flex">Lift your business to new heights with our digital marketing services</span>
+                </div>
+
+
+                <div class="py-[25px]  xl:w-[30%]">
+                    To build software that gives customer facing teams in small and medium-sized businesses the ability
+                    to create rewarding and long-lasting relationships with customers
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!--  bu 5 div  logo -->
+    <div class="w-full">
+        <div class="w-[90%] m-auto xl:w-[78%]  xl:flex  xl:justify-between xl:h-[450px] xl:items-center ">
+
+
+
+            <div class="xl:w-[33%]">
+                <h1 class="text-3xl font-['inter']  font-bold xl:text-6xl">890+</h1>
+
+                <p class="w-[80%] xl:mt-8">some big companies that we work with, and trust us very much</p>
+            </div>
+
+
+
+            <div
+                class="w-[80%] h-[400px] flex flex-wrap  justify-between  items-center  xl:w-[60%] xl:h-[150px] ">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/Airbnb Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/Amazon Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/FedEx Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/Microsoft Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/OYO Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/Walmart Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/Google Logo.svg" alt="">
+                <img class="w-[130px]  h-[40px]" src="./img2/logos/OLA logo.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- bu 6 div  cards  -->
+    <div class="w-full py-[30px]">
+        <div class="w-[90%] m-auto">
+
+            <div class="w-full xl:w-[60%]  ">
+                <h1 class="text-3xl py-[10px] font-bold  font-['inter'] xl:text-6xl">
+                    <span class="xl:hidden">
+                        Here’s how Sans can benefit your busines
+                    </span>
+                    <span class="hidden xl:flex">Advertise, analyze, and optimize! We do it all for you</span>
+                </h1>
+
+                <p class="text-[#7E8492] py-[18px] xl:w-[70%] xl:text-xl">Build more meaningful and lasting
+                    relationships - better understand
+                    their needs, identify new opportunities to help address any problems faster</p>
+            </div>
+
+
+
+
+            <div class="w-full xl:flex  xl:flex-wrap   xl:justify-between">
+
+                <div class="w-full flex  justify-between  my-[20px] xl:w-[48%]">
+                    <div class="w-[48%]  h-[250px] bg-f1 bg-cover  border-2 xl:h-[300px]">
+                        <div
+                            class="w-[50px] h-[50px] bg-[#161A34] rounded-full translate-x-[110px]        translate-y-[10px] flex justify-center items-center xl:translate-x-[210px]">
+
+                            <img class="w-[30px] h-[30px]  " src="./icons/Icon (1).svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="w-[48%] xl:w-[47%] ml-[10px]">
+                        <h1 class="text-xl font-bold  font-['inter'] xl:text-4xl">Lead happiness for customers</h1>
+
+                        <p class="xl:mt-[25px] xl:text-[18px]">Build more meaningful and lasting relationships - better
+                            understand their needs, identify new
+                            opportunities to help address any problems faster</p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="w-full flex  justify-between  my-[20px]  xl:w-[48%] ">
+                    <div class="w-[48%]  h-[250px] bg-f2 bg-cover  border-2 xl:h-[300px]">
+                        <div
+                            class="w-[50px] h-[50px] bg-[#161A34] rounded-full translate-x-[110px]        translate-y-[10px] flex justify-center items-center xl:translate-x-[210px]">
+
+                            <img class="w-[30px] h-[30px]  " src="./icons/1112121.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="w-[48%] xl:w-[47%] ml-[10px]">
+                        <h1 class="text-xl font-bold  font-['inter'] xl:text-4xl">Have fun growing together</h1>
+
+                        <p class="xl:mt-[25px] xl:text-[18px]">
+                            Build more meaningful and lasting relationships - better understand their needs, identify
+                            new opportunities to help address any problems faster
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="w-full flex  justify-between  my-[20px]  xl:w-[48%]  ">
+                    <div class="w-[48%]  h-[250px] bg-f3 bg-cover  border-2 xl:h-[300px]">
+                        <div
+                            class="w-[50px] h-[50px] bg-[#161A34] rounded-full translate-x-[110px]        translate-y-[10px] flex justify-center items-center  xl:translate-x-[210px]">
+
+                            <img class="w-[30px] h-[30px]  " src="./icons/klddkj.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="w-[48%] xl:w-[47%] xl:ml-[10px]">
+                        <h1 class="text-xl font-bold  font-['inter']  xl:text-4xl ">Mutually support each other</h1>
+
+                        <p class="xl:mt-[25px] xl:text-[18px]">Build more meaningful and lasting relationships - better
+                            understand their needs, identify new
+                            opportunities to help address any problems faster</p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="w-full flex  justify-between  my-[20px]  xl:w-[48%]  ">
+                    <div class="w-[48%]  h-[250px] bg-f4 bg-cover  border-2 xl:h-[300px]">
+                        <div
+                            class="w-[50px] h-[50px] bg-[#161A34] rounded-full translate-x-[110px]        translate-y-[10px] flex justify-center items-center  xl:translate-x-[210px]">
+
+                            <img class="w-[30px] h-[30px]  " src="./icons/Icon.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="w-[48%]   xl:w-[47%] xl:ml-[10px]">
+                        <h1 class="text-xl font-bold  font-['inter'] xl:text-4xl ">Make Your Business Grow</h1>
+
+                        <p class="xl:mt-[25px] xl:text-[18px]">Build more meaningful and lasting relationships - better
+                            understand their needs, identify new
+                            opportunities to help address any problems faster</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!--  bu  7 div   computer  div -->
+    <div class="w-full ">
+        <div class="w-[90%] m-auto">
+            <h1 class="text-3xl  font-['inter'] font-bold py-[15px] ">
+                Trending news from Coca
+            </h1>
+            <p class="text-[#7E8492] font-bold font-['inter'] text-xl">we have some new Service to pamper you</p>
+
+
+            <div class=" w-full  py-[15px] mt-[10px]  xl:flex  xl:justify-between  ">
+
+
+
+                <div class="xl:w-[48%]">
+                    <img class="w-full h-[250px]  xl:hidden" src="./icons/computer.svg" alt="">
+                    <img class="  hidden w-full h-[250px] xl:block xl:h-[350px]" src="./img2/Rectangle 5650.png" alt="">
+
+                    <div class=" w-full text-[14px] flex justify-between">
+                        <span>Published in Insight Jan 30, 2021</span>
+                        <span>by : Albert Sans</span>
+                    </div>
+
+                    <p class="font-bold  text-xl py-[10px]  font-['inter'] xl:text-4xl">
+                        What makes an authentic employee profile, and why does it matter ?
+                    </p>
+                </div>
+
+                
+                <div class="hidden xl:block xl:w-[48%]">
+                    <img class="w-full h-[250px] xl:hidden" src="./icons/computer.svg" alt="">
+                    <img class="w-full h-[250px] hidden  xl:block xl:h-[350px]" src="./img2/Rectangle 5651.png" alt="">
+
+                    <div class=" w-full text-[14px] flex justify-between">
+                        <span>Published in Insight Jan 30, 2021</span>
+                        <span>by : Albert Sans</span>
+                    </div>
+
+                    <p class="font-bold  text-xl py-[10px]  font-['inter'] xl:text-4xl">
+                        How to build a Kaylen relationship with a good company
+                    </p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+    <!--  bu 8 div  profile -->
+    <div class="w-full">
+        <div class=" w-[90%]  m-auto text-['Inter']  xl:flex  xl:justify-between  xl:mt-[40px]  xl:py-[30px] ">
+            <h1 class="w-[80%]  text-3xl font-bold xl:w-[47%] xl:text-6xl">
+                What our customer are saying
+            </h1>
+
+
+            <p class="w-[80%]  text-xl  py-[20px] text-[#7E8492] xl:w-[35%]  ">
+                We are trusted numerous companies from different business to meet their needs
+            </p>
+        </div>
+
+
+
+        <div class="w-[90%] m-auto text-['inter']  xl:w-[75%]">
+
+            <div class="w-[200px]   ">
+                <div class="w-[40px]  h-[40px]">
+                    <img src="./icons/“.svg" alt="">
+
+                </div>
+
+
+                <div class="w-[200px]  h-[80px]   ">
+
+                    <img class="w-[400px] translate-x-[40px]  translate-y-[-40px]  h-[100px] xl:translate-x-[0px]" src="./icons/Rating.svg"
+                        alt="">
+                </div>
+
+            </div>
+
+
+            <div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="w-[90%] m-auto  text-['Inter'] translate-y-[-40px]  mx-[30px] xl:w-full border  border-black xl:flex xl:flex-col xl:items-center  ">
+
+
+            <div class="xl:w-[80%]">
+                <h1 class="text-2xl  font-bold pl-[20px] xl:pl-[0px] xl:w-[80%] xl:text-4xl">“With Agency the results are very satisfying. wrapped with Hight
+                    quality and innovative design that makes a surge of visitors on my website”
+                </h1>
+    
+    
+    
+                <div class="w-full flex justify-between  py-[20px] ">
+                    <div class=" flex ">
+                        <img src="./icons/Ellipse 15.svg" alt="">
+    
+                        <div class="ml-4 ">
+                            <p>Renee Wells</p>
+    
+                            <p>Product Designer, Quotient</p>
+                        </div>
+                    </div>
+    
+    
+    
+                    <img src="./icons/Button Arrow.svg" alt="">
+    
+                </div>
+            </div>
+           
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!--bu 9 div  -->
+
+    <div class="w-full">
+        <div class="w-[90%] m-auto  font-['Inter'] xl:flex  xl:justify-between">
+
+            <div class="w-full xl:w-1/2">
+                <h1 class="text-3xl  font-bold  font-['Inter'] py-[15px] xl:text-6xl">Think beyond the wave</h1>
+
+
+                <div class="w-full flex  justify-between xl:justify-start">
+                    <div class="w-[40px] h-[1px] translate-y-[14px] bg-black"></div>
+
+
+                    <p class="w-[85%]  font-bold  text-[20px] xl:ml-[15px]">Ask about Sans products, pricing,
+                        implementation, or anything else. Our highly trained reps are standing by, ready to help</p>
+                </div>
+            </div>
+
+
+            <div class="my-[20px] pl-[50px] pt-[48px]">
+                <button class="bg-black text-white w-[170px] font-['Inter'] text-xl  h-[50px] rounded-[30px]">
+                    Try for free
+                </button>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="w-full">
+        <div class="w-[90%] m-auto  mt-8  xl:flex xl:justify-between xl:py-[30px]">
+            <div class="h-[150px] xl:w-[30%]">
+                <a href="#" class="flex items-center">
+                    <img src="./img/Group 33107.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">COCO</span>
+                </a>
+                <p class="text-xl  text-[#7E8492] w-[88%]  py-[15px] ">
+                    We built an elegant solution. Our team created a fully integrated sales and marketing solution for
+                    SMBs
+                </p>
+            </div>
+
+
+
+            <div class="w-full h-[120px]  border-white border border-t-[#ccc] flex flex-col  justify-evenly xl:w-[65%] xl:border-none xl:block  ">
+
+                <ul class="w-1/2 m-auto flex  justify-between   list-none xl:hidden ">
+                    <li><a class="text-[25px]" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-[25px]" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a class="text-[25px]" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a class="text-[25px]" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+
+
+                <div class="w-full  flex  justify-between  xl:hidden ">
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Support</p>
+                </div>
+
+                <div class="hidden  xl:flex xl:jutify-evenly xl:list-none xl:w-full ">
+                    <div class="w-[25%]  pl-[30px]">
+                        <p class="text-xl  font-bold">Company</p>
+                        <li class="mt-[10px]"><a href="#">About</a></li>
+                        <li class="mt-[10px]"><a href="#">Pricing</a></li>
+                        <li class="mt-[10px]"><a href="#">Jobs</a></li>
+                        <li class="mt-[10px]"><a href="#">Blog</a></li>
+                    </div>
+                    <div class="w-[25%]  pl-[30px] ">
+                        <p class="text-xl  font-bold">Product</p>
+                        <li class="mt-[10px]"><a href="#">Sales Software</a></li>
+                        <li class="mt-[10px]"><a href="#">Marketplace</a></li>
+                        <li class="mt-[10px]"><a href="#">Terms & Conditions</a></li>
+                        <li class="mt-[10px]"><a href="#">Privacy Policy</a></li>
+                    </div>
+                    <div class="w-[25%]   pl-[30px]">
+                        <p class="text-xl  font-bold">Discover</p>
+                        <li class="mt-[10px]"><a href="#">CRM Comparision</a></li>
+                        <li class="mt-[10px]"><a href="#">Partner Program</a></li>
+                        <li class="mt-[10px]"><a href="#">What is CRM</a></li>
+                        <li class="mt-[10px]"><a href="#">Resource</a></li>
+                    </div>
+                    <div class="w-[25%]    pl-[30px]">
+                        <p class="text-xl  font-bold">Help Center</p>
+                        <li class="mt-[10px]"><a href="#">Community</a></li>
+                        <li class="mt-[10px]"><a href="#">Knowledge Base</a></li>
+                        <li class="mt-[10px]"><a href="#">Academy</a></li>
+                        <li class="mt-[10px]"><a href="#">Support</a></li>
+                    </div>
+                    
+                  
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="w-full py-[30px] xl:border-white xl:mt-[30px] xl:border xl:border-t-[#ccc]">
+            <p class="text-center">© Copyright 2023, All Rights Reserved</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
